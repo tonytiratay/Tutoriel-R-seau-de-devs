@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="contact-list-block">
+    <%= @contacts.each do |c| %>
+        <h3><%= c.name %></h3>
+        <p><%= c.email %></p>
+        <p><%= c.comments %></p>
+    <% end %>
+  </div>
+</div>
